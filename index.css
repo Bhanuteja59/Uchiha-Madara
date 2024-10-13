@@ -1,0 +1,66 @@
+body{
+          background-image: url(https://img.freepik.com/premium-vector/dark-hexagon-gaming-abstract-vector-background-with-pink-blue-colored-bright-flashes_156943-1454.jpg);
+  color:white;
+}    
+
+.frame1 , .frame2 {
+              height:550px;
+            width: 100%;
+}
+
+.thumbnail > img {
+  height:250px;
+  width:100%;
+}
+.gif{
+            width:60%;
+            margin-left: auto;
+            margin-right: auto;
+              margin-bottom:20px;
+        }
+   
+.btn {
+ padding: 0.8em 1.8em;
+ border: 2px solid #17C3B2;
+ position: relative;
+ overflow: hidden;
+ background-color: transparent;
+ text-align: center;
+ text-transform: uppercase;
+ font-size: 16px;
+ transition: .3s;
+ z-index: 1;
+ font-family: inherit;
+ color: #17C3B2;
+}
+
+.btn::before {
+ content: '';
+ width: 0;
+ height: 300%;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%) rotate(45deg);
+ background: #17C3B2;
+ transition: .5s ease;
+ display: block;
+ z-index: -1;
+}
+
+.btn:hover::before {
+ width: 105%;
+}
+
+.btn:hover {
+ color: #111;
+}
+
+.thumbnail{
+background: rgba( 255, 255, 255, 0.1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 14px );
+-webkit-backdrop-filter: blur( 14px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
